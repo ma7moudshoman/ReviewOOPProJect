@@ -1,16 +1,17 @@
 package org.example;
 
-public class User {
+public abstract class User {
     public String name;
     private String email;
     private  String phoneNumber;
-
+    protected IOOperation [] operation;
 
     public User() {}
 
-public User(String name) {
+    public User(String name) {
         this.name = name;
 }
+
     public User(String name, String email, String phoneNumber) {
         this.name = name;
         this.email = email;
@@ -34,6 +35,12 @@ public User(String name) {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+    public IOOperation[] getOperation() {
+        return operation;
+    }
+    public void setOperation(IOOperation[] operation) {
+        this.operation = operation;
+    }
 
-
+abstract public void menu();
 }

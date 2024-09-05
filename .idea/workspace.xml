@@ -4,14 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ced51fd-5a43-4688-88ec-e9ac09848a67" name="Changes" comment="NewOOP">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/NormalUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
+    <list default="true" id="4ced51fd-5a43-4688-88ec-e9ac09848a67" name="Changes" comment="NewOOPAndAdmin">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AddBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DeleteAllBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DeleteBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Exit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/IOOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewBooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NormalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/NormalUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -87,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725479402939</updated>
-      <workItem from="1725479404031" duration="9592000" />
+      <workItem from="1725479404031" duration="16369000" />
     </task>
     <task id="LOCAL-00001" summary="NewOOP">
       <option name="closed" value="true" />
@@ -97,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725479519546</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NewOOPAndAdmin">
+      <option name="closed" value="true" />
+      <created>1725489384236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725489384236</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="NewOOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="NewOOP" />
+    <MESSAGE value="NewOOPAndAdmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="NewOOPAndAdmin" />
   </component>
 </project>
