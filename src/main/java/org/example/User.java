@@ -1,12 +1,14 @@
 package org.example;
 
 public abstract class User {
-    public String name;
-    private String email;
-    private  String phoneNumber;
+    protected String name;
+    protected String email;
+    protected String phoneNumber;
     protected IOOperation [] operation;
 
-    public User() {}
+    public User() {
+
+    }
 
     public User(String name) {
         this.name = name;
@@ -42,5 +44,8 @@ public abstract class User {
         this.operation = operation;
     }
 
-abstract public void menu();
+    abstract public String toString() ;
+
+
+abstract public void menu(Database database,User user);
 }

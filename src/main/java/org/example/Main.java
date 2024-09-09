@@ -38,11 +38,11 @@ public class Main {
         String email = input.next();
         int flag= database.login(phone,email);
         if (flag!=-1){
-            User admin=database.getUser(flag);
-            System.out.println("Welcome " );
-
+            User user=database.getUser(flag);
+            user.menu(database,user);
         }else {
-         return;        }
+            System.out.println("User don't exist");
+        }
 
 
     }
@@ -58,13 +58,14 @@ public class Main {
         System.out.println("1.Admin\n2.normal User");
 
         int n2 = input.nextInt();
+        User user;
+
         if (n2 == 1){
-            User admin = new User(name, email, emailNumber);
-            database.addUser(admin);
+            user= new Admin(name, email, emailNumber);
         }else {
-            User user = new User(name, email, emailNumber);
-           database.addUser(user);
+             user = new NormalUser(name, email, emailNumber);
         }
-        System.out.println("User created successfully!");
+                 database.addUser(user);
+                   user.menu(database,user);
     }
 }

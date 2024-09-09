@@ -111,4 +111,27 @@ public String  toString(){
     public void setName(String name){
         this.name = name;
     }
+    public String toString2(){
+        String text =  name+"<n/>"+
+                "<n/>" +author+
+                "<n/>"+ Publisher+
+                "<n/>"+ Address +
+                "<n/>" +String.valueOf(Qty) +
+                "<n/>" +String.valueOf(price)+
+                "<n/>"+String.valueOf(BrwCopies);
+        return text;
+    }
+    public Book parseBook(String s){
+        String[] parts = s.split("<n/>");
+        Book book = new Book();
+        book.setName(parts[0]);
+        book.setAuthor(parts[1]);
+        book.setPublisher(parts[2]);
+        book.setAddress(parts[3]);
+        book.setQty(Integer.parseInt(parts[4]));
+        book.setPrice(Double.parseDouble(parts[5]));
+        book.setBrwCopies(Integer.parseInt(parts[6]));
+        return book;
+
+    }
 }

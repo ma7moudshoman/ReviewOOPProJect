@@ -1,10 +1,12 @@
 package org.example;
 
-public class ViewBooks  implements  IOOperation{
+import javax.xml.crypto.Data;
+
+public class CalculateFine implements IOOperation {
+
 
     @Override
     public void operation(Database database,User user) {
-        System.out.println("View books");
 
     }
 }
