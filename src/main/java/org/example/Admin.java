@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Admin  extends  User{
 
     User user;
+
     public Admin(String name){
         super(name);
         this.operation =new IOOperation[]{
@@ -51,6 +52,7 @@ public class Admin  extends  User{
         Scanner scanner = new Scanner(System.in);
         int flag = scanner.nextInt();
         this.operation[flag-1].operation(database,user);
+
     }
 
 

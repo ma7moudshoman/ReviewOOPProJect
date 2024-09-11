@@ -40,11 +40,11 @@ public  NormalUser(String username, String email, String phoneNumber) {
     public void menu(Database database,User user) {
         System.out.println("1. View Books ");
         System.out.println("2. Search Books ");
-        System.out.println("1. Place Order ");
-        System.out.println("1. Borrow Books ");
-        System.out.println("1. Calculate fine ");
-        System.out.println("1. Return Books ");
-        System.out.println("1. Exit ");
+        System.out.println("3. Place Order ");
+        System.out.println("4. Borrow Books ");
+        System.out.println("5. Calculate fine ");
+        System.out.println("6. Return Books ");
+        System.out.println("7. Exit ");
 
         Scanner scanner = new Scanner(System.in);
         int flag = scanner.nextInt();

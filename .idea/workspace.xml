@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ced51fd-5a43-4688-88ec-e9ac09848a67" name="Changes" comment="NewOOPAndAdmin">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AddBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CalculateFine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DeleteAllBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/DeleteBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Exit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/IOOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AddBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AddBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Admin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Books" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Books" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Data/Users" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Data/Users" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/NormalUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/NormalUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ViewBooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ViewBooks.java" afterDir="false" />
     </list>
@@ -104,6 +96,9 @@
       <option name="presentableId" value="Default" />
       <updated>1725479402939</updated>
       <workItem from="1725479404031" duration="59864000" />
+      <workItem from="1725900284290" duration="1811000" />
+      <workItem from="1725915060748" duration="3206000" />
+      <workItem from="1725958074571" duration="22197000" />
     </task>
     <task id="LOCAL-00001" summary="NewOOP">
       <option name="closed" value="true" />
@@ -145,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725729076962</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="NewOOPAndAdmin">
+      <option name="closed" value="true" />
+      <created>1725900671020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1725900671020</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

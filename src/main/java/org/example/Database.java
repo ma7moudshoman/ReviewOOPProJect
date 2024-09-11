@@ -33,7 +33,7 @@ private File file=new File("D:\\projects\\OOPNewProject\\src\\main\\java\\Data")
         URL usersURL = Main.class.getClassLoader().getResource("Users");
         URL booksURL = Main.class.getClassLoader().getResource("Books");
 if (!file.exists()) {
-    file.mkdir();
+    file.mkdirs();
 }
         if (usersURL != null) {
             usersfile = new File(usersURL.getFile());
@@ -50,13 +50,36 @@ if (!file.exists()) {
                 booksfile.mkdirs();
             }
             saveUsers();
+            getBooks();
         } else {
             System.err.println("Error: 'Books' resource not found.");
         }
     }
+    /*
+    public Database(){
+    if(!file.exists()){
+    file.mkdirs();
+    }
+    if(!usersfile.exists()){
+    try{
+    usersfile.createNewFile();
+    }
+    catch(Exception e){}
+     }
+     if(!booksfile.exists()){
+     try{
+     booksfile.createNewFile();
+     }
+     catch(exception e){}
+     }
+     getUsers();
+     saveUsers();
+
+    }
+    * */
 
     // إضافة مستخدم إلى قاعدة البيانات
-    public void addUser(User user) {
+    public void AddUser(User user) {
         users.add(user);
         username.add(user.getName());
         saveUsers();
@@ -75,33 +98,30 @@ if (!file.exists()) {
     }
 
     // الحصول على مستخدم بناءً على المؤشر
-    public User getUser(int flag) {
+    public User getUser(int flag)  {
         return users.get(flag);
     }
 
     // إضافة كتاب إلى قاعدة البيانات
-    public void addBook(Book book) {
+    public void AddBook(Book book) {
         books.add(book);
         booknames.add(book.getName());
         saveBooks();
     }
 
     private void getUsers(){
-        String text1="";
-
+        String text1= "";
         try {
             BufferedReader br = new BufferedReader(new FileReader(usersfile));
        String s1;
        while ((s1 = br.readLine()) != null) {
-           text1 += s1;
+           text1 =text1 + s1;
        }
        br.close();
-
         }catch (Exception e){
             System.err.println(e.toString());
         }
-
-        if (!text1.matches(" ") || !text1.isEmpty() ){
+        if (!text1.matches("") || !text1.isEmpty() ){
             String [] a1=text1.split("<NewUser/>");
             for (String s : a1) {
                 String [] a2= s.split("<n/>");
@@ -124,8 +144,8 @@ if (!file.exists()) {
 
     private void saveUsers(){
         String text1="";
-        for (Book book : books) {
-            text1=text1+book.toString()+"<NewBook/>\n";
+        for (User user : users) {
+            text1=text1+user.toString()+"<NewUser/>\n";
         }
         try {
             PrintWriter pw=new PrintWriter(booksfile);
@@ -146,24 +166,20 @@ if (!file.exists()) {
             PrintWriter pw=new PrintWriter(booksfile);
             pw.print(text1);
             pw.close();
-            System.err.println("Data Saved");
         }catch (Exception e){
             System.err.println(e.toString());
         }
 
     }
-
     private void getBooks(){
         String text1="";
-
         try {
-            BufferedReader br = new BufferedReader(new FileReader(usersfile));
+            BufferedReader br1 = new BufferedReader(new FileReader(booksfile));
             String s1;
-            while ((s1 = br.readLine()) != null) {
+            while ((s1 = br1.readLine()) != null) {
                 text1 += s1;
             }
-            br.close();
-
+            br1.close();
         }catch (Exception e){
             System.err.println(e.toString());
         }
@@ -190,6 +206,9 @@ if (!file.exists()) {
         book.setBrwCopies(Integer.parseInt(parts[6]));
         return book;
 
+    }
+    public ArrayList<Book> getAllBooks(){
+        return books;
     }
 
 

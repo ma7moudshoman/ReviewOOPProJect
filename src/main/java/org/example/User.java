@@ -47,5 +47,5 @@ public abstract class User {
     abstract public String toString() ;
 
 
-abstract public void menu(Database database,User user);
+    abstract public void menu(Database database,User user);
 }
