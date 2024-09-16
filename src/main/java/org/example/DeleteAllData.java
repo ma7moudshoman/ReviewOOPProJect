@@ -2,22 +2,27 @@ package org.example;
 
 import java.util.Scanner;
 
-public class Exit implements IOOperation{
+public class DeleteAllData implements IOOperation{
 
 
     @Override
     public void oper(Database database,User user) {
 
-        System.out.println("\nAre you sure you want to Quit ?\n"
-                +"1. yes\n2.Main Menu");
+
+        System.out.println("\nAre you sure you want to delete all data?\n"
+        +"1.Content\n2.Main Menu");
         Scanner s = new Scanner(System.in);
         int i = s.nextInt();
         if (i == 1) {
-        s.close();
+           database.deleteAllData();
         }
         else {
             user.menu(database,user);
         }
 
+
+
     }
-}
+
+    }
+

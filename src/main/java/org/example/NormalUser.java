@@ -48,7 +48,7 @@ public  NormalUser(String username, String email, String phoneNumber) {
 
         Scanner scanner = new Scanner(System.in);
         int flag = scanner.nextInt();
-        this.operation[flag-1].operation(database,user);
+        this.operation[flag-1].oper(database,user);
         scanner.close();
     }
 

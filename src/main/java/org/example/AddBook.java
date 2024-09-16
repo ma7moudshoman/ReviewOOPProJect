@@ -6,12 +6,20 @@ public class AddBook implements  IOOperation{
 
 
     @Override
-    public void operation(Database database,User user) {
+    public void oper(Database database,User user) {
 
         Scanner s = new Scanner(System.in);
         Book book = new Book();
 
         System.out.println("Enter the  Book Name: ");
+
+String name = s.next();
+        if (database.getBook(name)> -1){
+            System.out.println("this is the Book already exists");
+            return;
+        }else {
+            book.setName(s.next());
+        }
         book.setName(s.next());
         System.out.println("Enter the Author: ");
         book.setAuthor(s.next());
@@ -37,4 +45,5 @@ public class AddBook implements  IOOperation{
 
 
     }
+
 }

@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class ViewBooks  implements  IOOperation{
 
     @Override
-    public void operation(Database database,User user) {
-        System.out.println("View books");
-        ArrayList<Book> books = database.getAllBooks();
+    public void oper(Database database,User user) {
+
+         ArrayList<Book> books = database.getAllBooks();
+
         System.out.println("Name\tAuthor\tPublisher\tCLA\tStatus\tQty\tPrice"
                 + "\tBrw cps");
         for (Book book : books) {
@@ -19,4 +20,5 @@ public class ViewBooks  implements  IOOperation{
         user.menu(database,user );
 
     }
+
 }

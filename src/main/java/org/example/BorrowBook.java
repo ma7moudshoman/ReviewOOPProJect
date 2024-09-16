@@ -4,7 +4,8 @@ public class BorrowBook implements IOOperation{
 
 
     @Override
-    public void operation(Database database,User user) {
+    public void oper(Database database,User user) {
 
     }
+
 }

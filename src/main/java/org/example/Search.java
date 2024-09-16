@@ -1,10 +1,13 @@
 package org.example;
 
-public class Search implements IOOperation{
+public
+class Search implements IOOperation{
 
 
     @Override
-    public void operation(Database database,User user) {
+    public void oper(Database database,User user) {
 
     }
+
+
 }
