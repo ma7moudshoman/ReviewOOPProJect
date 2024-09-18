@@ -11,7 +11,7 @@ public class AddBook implements  IOOperation{
         Scanner s = new Scanner(System.in);
         Book book = new Book();
 
-        System.out.println("Enter the  Book Name: ");
+        System.out.println("Enter Book Name: ");
 
 String name = s.next();
         if (database.getBook(name)> -1){
@@ -21,7 +21,7 @@ String name = s.next();
             book.setName(s.next());
         }
         book.setName(s.next());
-        System.out.println("Enter the Author: ");
+        System.out.println("Enter book Author: ");
         book.setAuthor(s.next());
         System.out.println("Enter book publisher: ");
         book.setPublisher(s.next());
@@ -29,11 +29,9 @@ String name = s.next();
         book.setQty(s.nextInt());
         System.out.println("Enter price");
         book.setPrice(s.nextDouble());
-        System.out.println("Enter collection address");
+        System.out.println("Enter book collection address");
         book.setAddress(s.next());
-        System.out.println("Enter title");
-        book.setTitle(s.next());
-        System.out.println("Enter borrower copies");
+       System.out.println("Enter borrower copies");
         book.setBrwCopies(s.nextInt());
 
 
